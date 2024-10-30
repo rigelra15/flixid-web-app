@@ -1,0 +1,107 @@
+CREATE TABLE movies (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  overview TEXT,
+  rating REAL,
+  cover VARCHAR(255),
+  genre VARCHAR(255),
+  release_date DATE,
+  duration INTEGER,
+  category VARCHAR(255),
+  age_rating VARCHAR(255),
+  trailer VARCHAR(255),
+  episode INTEGER
+);
+
+INSERT INTO movies (title, overview, rating, cover, genre, release_date, duration, category, age_rating, trailer, episode) VALUES
+(
+  'Venom: The Last Dance',
+  'Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddies last dance.',
+  7.5,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/k42Owka8v91trK1qMYwCQCNwJKr.jpg',
+  'Action, Science Fiction',
+  '2024-10-23',
+  109,
+  'Movie',
+  '13+',
+  '',
+  0
+),
+(
+  'The Batman',
+  'In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.',
+  8.1,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/74xTEgt7R36Fpooo50r9T25onhq.jpg',
+  'Action, Crime, Drama',
+  '2022-02-03',
+  176,
+  'Movie',
+  '13+',
+  '',
+  0
+),
+(
+  'Transformers One',
+  'The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but once were friends bonded like brothers who changed the fate of Cybertron forever.',
+  8.1,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/iHPIBzrjJHbXeY9y7VVbEVNt7LW.jpg',
+  'Animation, Science Fiction, Adventure, Family, Action',
+  '2024-09-11',
+  104,
+  'Movie',
+  'PG',
+  '',
+  0
+),
+(
+  'The Wild Robot',
+  'After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the islands animals and cares for an orphaned baby goose.',
+  8.6,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg',
+  'Animation, Science Fiction, Family',
+  '2024-10-11',
+  102,
+  'Original',
+  'PG',
+  '',
+  0
+),
+(
+  'The Last of Us',
+  'Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.',
+  8.6,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
+  'Drama',
+  '2023-01-15',
+  0,
+  'Series',
+  'TV-MA',
+  '',
+  9
+),
+(
+  'Home Sweet Loan',
+  'Kaluna, a middle-class worker, who still lives with her parents and older siblings who are already married. She tries hard to save and live simply in order to realize her dream of buying and owning her own house. But the reality of her life as a sandwich generation who has to help support her extended family, coupled with her minimal income, makes it difficult to realize this dream. This condition makes Kaluna feel like she is not at home every time she comes home.',
+  8.3,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/fNj3dQcawpaORfmeXL7dIUkxkRK.jpg',
+  'Drama, Family, Comedy',
+  '2024-09-26',
+  112,
+  'Movie',
+  'SU',
+  '',
+  0
+),
+(
+  'Inside Out 2',
+  'Teenager Rileys mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, arent sure how to feel when Anxiety shows up. And it looks like shes not alone.',
+  7.6,
+  'https://image.tmdb.org/t/p/w600_and_h900_bestv2/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg',
+  'Animation, Family, Adventure, Comedy, Drama',
+  '2024-06-11',
+  97,
+  'Movie',
+  'PG',
+  '',
+  0
+)
