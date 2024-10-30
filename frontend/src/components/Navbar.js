@@ -53,7 +53,7 @@ function Navbar({ selectedCategory, setSelectedCategory, openModal }) {
 
   return (
     <motion.div
-      className="mb-6 px-52 py-4 relative flex items-center justify-between h-24 w-full bg-[#010f1d] bg-opacity-60 backdrop-blur-md z-20"
+      className="mb-6 px-20 py-4 relative flex items-center justify-between h-24 w-full bg-[#010f1d] bg-opacity-60 backdrop-blur-md z-20"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -106,14 +106,12 @@ function Navbar({ selectedCategory, setSelectedCategory, openModal }) {
                 {searchResults.length > 0 && (
                   <div className="absolute top-14 left-0 w-full bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-64 overflow-y-auto">
                     {searchResults.map((movie) => (
-                      <Link
-                        to={`/movies/${movie.id}`}
+                      <p
                         key={movie.id}
                         className="block px-4 py-2 hover:bg-gray-200"
-                        onClick={() => setQuery("")}
                       >
                         {movie.title}
-                      </Link>
+                      </p>
                     ))}
                   </div>
                 )}
